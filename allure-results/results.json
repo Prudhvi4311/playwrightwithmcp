@@ -1,0 +1,872 @@
+[
+  {
+    "description": "  As a user, I want to manage my cart so that I can purchase products efficiently.",
+    "elements": [
+      {
+        "description": "",
+        "id": "cart-operations;add-a-single-product-to-the-cart",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Add a single product to the cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1002700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the GreenKart home page",
+            "match": {
+              "location": "features\\step_definitions\\business_flows.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4602339800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I add \"Brocolli - 1 Kg\" to the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the cart should contain \"Brocolli - 1 Kg\" with quantity 1",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-operations;add-multiple-different-products-to-the-cart",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Add multiple different products to the cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 74499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I am on the GreenKart home page",
+            "match": {
+              "location": "features\\step_definitions\\business_flows.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 832712800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I add \"Brocolli - 1 Kg\" and \"Carrot - 1 Kg\" to the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the cart should contain both products",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-operations;increase-quantity-of-a-product-before-adding-to-cart",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Increase quantity of a product before adding to cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I am on the GreenKart home page",
+            "match": {
+              "location": "features\\step_definitions\\business_flows.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1205412000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I increase the quantity of \"Brocolli - 1 Kg\" to 3 and add to cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the cart should contain \"Brocolli - 1 Kg\" with quantity 3",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-operations;add-the-same-product-multiple-times-and-verify-quantity",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Add the same product multiple times and verify quantity",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 55800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I am on the GreenKart home page",
+            "match": {
+              "location": "features\\step_definitions\\business_flows.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1886043299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I add \"Brocolli - 1 Kg\" to the cart twice",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the cart should contain \"Brocolli - 1 Kg\" with quantity 2",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-operations;remove-a-product-from-the-cart",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Remove a product from the cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 136500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I have \"Brocolli - 1 Kg\" in the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I remove \"Brocolli - 1 Kg\" from the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "the cart should not contain \"Brocolli - 1 Kg\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "cart-operations",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Cart Operations",
+    "tags": [],
+    "uri": "features\\cart_operations.feature"
+  },
+  {
+    "description": "  As a user, I want to checkout and place orders securely.",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout-and-order;proceed-to-checkout-with-products-in-the-cart",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Proceed to checkout with products in the cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 146899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I have products in the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I proceed to checkout",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be on the checkout page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "checkout-and-order;try-to-checkout-with-an-empty-cart",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Try to checkout with an empty cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 206400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I have no products in the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I try to proceed to checkout",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see a message indicating the cart is empty",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "checkout-and-order;apply-a-valid-promo-code-at-checkout",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Apply a valid promo code at checkout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 50199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I am on the checkout page with products in the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I apply a valid promo code",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see a discount applied",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "checkout-and-order;apply-an-invalid-promo-code-at-checkout",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Apply an invalid promo code at checkout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I am on the checkout page with products in the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I apply an invalid promo code",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should see an error message",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "checkout-and-order;complete-purchase-and-verify-order-confirmation",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Complete purchase and verify order confirmation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I am on the checkout page with products in the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I place the order",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I should see an order confirmation message",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout-and-order",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Checkout and Order",
+    "tags": [],
+    "uri": "features\\checkout_and_order.feature"
+  },
+  {
+    "description": "  As a user, I want the app to handle edge cases gracefully.",
+    "elements": [
+      {
+        "description": "",
+        "id": "edge-cases;add-zero-quantity-to-cart",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Add zero quantity to cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the GreenKart home page",
+            "match": {
+              "location": "features\\step_definitions\\business_flows.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1067994400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I try to add zero quantity of \"Brocolli - 1 Kg\" to the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see an error or no action",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "edge-cases;remove-all-products-from-cart-and-try-to-checkout",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Remove all products from cart and try to checkout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I have products in the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I remove all products and try to checkout",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see a message indicating the cart is empty",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "edge-cases;add-products,-refresh-the-page,-and-verify-cart-persistence",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Add products, refresh the page, and verify cart persistence",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I have products in the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I refresh the page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the cart should still contain the products",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "edge-cases",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Edge Cases",
+    "tags": [],
+    "uri": "features\\edge_cases.feature"
+  },
+  {
+    "description": "  As a user, I want to search for products so that I can find and add them to my cart.",
+    "elements": [
+      {
+        "description": "",
+        "id": "search-functionality;search-for-an-existing-product-by-full-name",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Search for an existing product by full name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the GreenKart home page",
+            "match": {
+              "location": "features\\step_definitions\\business_flows.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 919196099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I search for \"Brocolli\"",
+            "match": {
+              "location": "features\\step_definitions\\business_flows.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1172492200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see \"Brocolli - 1 Kg\" in the results",
+            "match": {
+              "location": "features\\step_definitions\\business_flows.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34218999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-functionality;search-for-a-product-by-partial-name",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Search for a product by partial name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 174100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I am on the GreenKart home page",
+            "match": {
+              "location": "features\\step_definitions\\business_flows.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 791994500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I search for \"Bro\"",
+            "match": {
+              "location": "features\\step_definitions\\business_flows.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1049281299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see products containing \"Bro\" in the results",
+            "match": {
+              "location": "features\\step_definitions\\business_flows.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41724399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-functionality;search-for-a-non-existent-product",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Search for a non-existent product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 70199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I am on the GreenKart home page",
+            "match": {
+              "location": "features\\step_definitions\\business_flows.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 803465900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I search for \"Dragonfruit\"",
+            "match": {
+              "location": "features\\step_definitions\\business_flows.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1066200799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see no products in the results",
+            "match": {
+              "location": "features\\step_definitions\\business_flows.steps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9163399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "search-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Search Functionality",
+    "tags": [],
+    "uri": "features\\search_functionality.feature"
+  }
+]

@@ -1,0 +1,25 @@
+# Business Flows and Edge Case Scenarios for GreenKart
+
+## Search Functionality
+- Search for an existing product by full name (e.g., "Brocolli").
+- Search for a product by partial name (e.g., "Bro").
+- Search for a non-existent product (e.g., "Dragonfruit").
+
+## Cart Operations
+- Add a single product to the cart.
+- Add multiple different products to the cart.
+- Increase quantity of a product before adding to cart.
+- Add the same product multiple times and verify quantity.
+- Remove a product from the cart.
+
+## Checkout and Order
+- Proceed to checkout with products in the cart.
+- Try to checkout with an empty cart (should not proceed).
+- Apply a valid promo code at checkout.
+- Apply an invalid promo code at checkout.
+- Complete purchase and verify order confirmation.
+
+## Edge Cases
+- Add zero quantity to cart (should not allow).
+- Remove all products from cart and try to checkout.
+- Add products, refresh the page, and verify cart persistence.

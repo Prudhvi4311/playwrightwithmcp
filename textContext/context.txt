@@ -1,0 +1,3 @@
+Find all Bussiness flow in the app.
+write to file and add under textContext
+run the file to genrate testcases and create BDD cucumber frame work and generate allure reports
